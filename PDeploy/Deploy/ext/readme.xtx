@@ -1,0 +1,6 @@
+Déposer dans ce répertoire tous les jar externes
+fournis par des tiers 
+nécessaire a la compilation du workspace.
+
+Tous vos projets du workspace seront lies à ce folder, qui sera utilisé tant 
+pour la compilation que le déploiment! (ainsi pas de redondance et de conflit de version)

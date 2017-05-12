@@ -1,0 +1,45 @@
+#!/bin/bash
+#
+# Goal:
+#
+#		Utiliser le script 
+#		
+#			/opt/quadra/run.sh a=3 c=2 b=4
+#		
+#		comme une commande system,ie comme l'usage ci-dessous
+#		
+# Usage:
+#
+#    	quadra a=3 c=2 b=4
+#
+# Emplacement de ce script quadra (sans .sh): 
+#
+#		Placer ce script ici:
+#
+#		/usr/local/bin
+#
+# Warning:
+#
+#		(W1) 	Rendre executable ce script:
+#
+#					chmod a+x  /usr/local/bin/quadra
+#
+#		(W2)	Si le fichier provient de windows, changer les line feed (LF)
+#
+#					sed --in-place 's/\r//g'  /usr/local/bin/quadra
+#				ou
+#					dos2unix /usr/local/bin/quadra
+#
+# See:
+#
+#		/opt/quadra/run.sh
+#
+# Perimetre:
+#
+#		Tester sous ubuntu 14.04 lts
+#
+
+cd /opt/quadra/
+source ./run.sh $1 $2 $3
+cd -
+
